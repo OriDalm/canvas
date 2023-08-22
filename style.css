@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: grab;
+    background-color: #f1f8ff;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.canvas-container {
+    width: 60vw;
+    height: 80vh;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 500px) {
+    .canvas-container {
+        width: 80vw;
+    }
+}

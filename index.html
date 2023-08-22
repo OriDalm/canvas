@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="onInit()">
+    <button onclick="onClearCanvas()">Clear</button>
+    <input  type="color" id="colorpicker" value="#000000" id="drawingColor" name="drawingColor" oninput="onDrawingColorChange(this.value)">
+    <div class="canvas-container">
+        <canvas onclick="onDraw(event)" width="450" height="450"></canvas>
+      </div>
+      <div>
+        <button onclick="onSetShape('line')">Line</button>
+        <button onclick="onSetShape('triangle')">Triangle</button>
+        <button onclick="onSetShape('rect')">Rect</button>
+        <button onclick="onSetShape('circle')">Circle</button>
+        <button onclick="onSetShape('text')">Text</button>
+        <button onclick="onSetShape('pencil')">Pencil</button>
+      </div>
+
+
+      <script src="js/circle.service.js"></script>
+      <script src="js/main.js"></script>
+    
+</body>
+</html>
